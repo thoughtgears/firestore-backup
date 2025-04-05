@@ -23,7 +23,7 @@ type backupRequest struct {
 	Bucket      string   `json:"bucket"`
 }
 
-// function is the entry point for the cloudfunction that will either backup a firestore database
+// function is the entry point for the cloud function that will either backup a firestore database
 // or restores a firestore database from a backup. The function is triggered by a cloud scheduler
 // job. You can invoke the function manually to restore collections by calling the function with the following
 // body: {"action": "restore", "collections": ["collection1", "collection2"], "project": "my-project"}
